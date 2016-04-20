@@ -1,0 +1,56 @@
+*{
+  margin: 10px;
+}
+
+/* Aqui empieza el codigo para el gato */
+.header{
+  flex-flow: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #424242;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+img{
+  height: 120px;
+}
+.cuadro{
+  background-color: #D8D8D8;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  border: solid #585858 2px;
+  transition: all .2s;
+  margin: 0;
+  font-size: 70px;
+  font-family: 'Indie Flower', cursive;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+@keyframes example {
+    0%   {color: #00FFFF;}
+    20%  {color: #00FF00;}
+    40%  {color: #FF00FF;}
+    60%  {color: #FF0000;}
+    80%  {color: #FFFF00;}
+    100% {color: #8000FF;}
+}
+
+.cuadro:hover{
+  background-color: #BDBDBD;
+  transition: all .2s;
+}
+h1:hover{
+  animation: example infinite .3s;
+}
+.fila{
+  height:90px;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin: 2px;
+}
