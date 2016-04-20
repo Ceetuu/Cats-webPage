@@ -38,10 +38,19 @@ img{
     80%  {color: #FFFF00;}
     100% {color: #8000FF;}
 }
+@keyframes anCuadro {
+    0%   {background-color: #00FFFF;}
+    20%  {background-color: #00FF00;}
+    40%  {background-color: #FF00FF;}
+    60%  {background-color: #FF0000;}
+    80%  {background-color: #FFFF00;}
+    100% {background-color: #8000FF;}
+}
 
 .cuadro:hover{
   background-color: #BDBDBD;
   transition: all .2s;
+  animation: anCuadro infinite 1s;
 }
 h1:hover{
   animation: example infinite .3s;
