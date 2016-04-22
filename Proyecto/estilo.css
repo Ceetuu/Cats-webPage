@@ -16,6 +16,40 @@
 img{
   height: 120px;
 }
+.botones{
+  flex-flow: row;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+a{
+  text-decoration: none;
+}
+h3{
+  display: flex;
+  justify-content: center;
+  animation: example infinite .3s;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+@keyframes bordes {
+    0%   {border-color: #00FFFF;}
+    20%  {border-color: #00FF00;}
+    40%  {border-color: #FF00FF;}
+    60%  {border-color: #FF0000;}
+    80%  {border-color: #FFFF00;}
+    100% {border-color: #8000FF;}
+}
+.boton{
+  border: solid #D8D8D8 2px;
+  color: #575757;
+  font-family: sans-serif;
+  border-radius: 5px;
+}
+.boton:hover{
+  animation: bordes infinite .3s;
+  animation-direction: alternate;
+}
 .cuadro{
   background-color: #D8D8D8;
   width: 90px;
@@ -38,6 +72,7 @@ img{
     80%  {color: #FFFF00;}
     100% {color: #8000FF;}
 }
+
 @keyframes anCuadro {
     0%   {background-color: #00FFFF;}
     20%  {background-color: #00FF00;}
@@ -51,9 +86,13 @@ img{
   background-color: #BDBDBD;
   transition: all .2s;
   animation: anCuadro infinite 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 h1:hover{
   animation: example infinite .3s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 .fila{
   height:90px;
